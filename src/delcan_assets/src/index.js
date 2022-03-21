@@ -1,13 +1,21 @@
 import { delcan } from "../../declarations/delcan";
 
 const initCanister = async () => {
-    const principal = await delcan.init();
-    console.log('Init', principal.toText());
+    try {
+        const principal = await delcan.init();
+        console.log('Init', principal.toText());
+    } catch (err) {
+        console.error(err);
+    }
 }
 
 const deleteCanister = async () => {
-    const principal = await delcan.delete();
-    console.log('Delete', principal.toText());
+    try {
+        const principal = await delcan.delete();
+        console.log('Delete', principal.toText());
+    } catch (err) {
+        console.error(err);
+    }
 }
 
 const init = () => {
