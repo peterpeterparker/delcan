@@ -1,0 +1,6 @@
+type DataBucket = 
+ service {
+   say: (text) -> (text) query;
+   transferCycles: () -> ();
+ };
+service : () -> DataBucket

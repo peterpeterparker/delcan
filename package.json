@@ -2,7 +2,12 @@
   "name": "delcan_assets",
   "version": "0.1.0",
   "description": "Internet Computer starter application",
-  "keywords": ["Internet Computer", "Motoko", "JavaScript", "Canister"],
+  "keywords": [
+    "Internet Computer",
+    "Motoko",
+    "JavaScript",
+    "Canister"
+  ],
   "scripts": {
     "build": "webpack",
     "prebuild": "npm run copy:types",
@@ -13,12 +18,14 @@
   "devDependencies": {
     "@dfinity/agent": "0.10.4",
     "@dfinity/candid": "0.10.4",
+    "@dfinity/identity": "^0.10.4",
     "@dfinity/principal": "0.10.4",
     "assert": "2.0.0",
     "buffer": "6.0.3",
     "copy-webpack-plugin": "^9.0.1",
     "events": "3.3.0",
     "html-webpack-plugin": "5.5.0",
+    "node-fetch": "^3.2.3",
     "process": "0.11.10",
     "stream-browserify": "3.0.0",
     "terser-webpack-plugin": "5.2.5",

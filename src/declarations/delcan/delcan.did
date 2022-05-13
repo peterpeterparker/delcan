@@ -1,4 +1,5 @@
 service : {
   delete: () -> (principal);
   init: () -> (principal);
+  installCode: (principal, blob, blob) -> ();
 }

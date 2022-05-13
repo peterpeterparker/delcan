@@ -62,4 +62,13 @@ actor Main {
     };
   };
 
+  public shared({ caller }) func installCode(canisterId: Principal, arg: Blob, wasmModule: Blob): async() {
+        await ic.install_code({
+                arg = arg;
+                wasm_module = wasmModule;
+                mode = #upgrade;
+                canister_id = canisterId;
+            });
+    };
+
 };

@@ -1,3 +1,0 @@
-actor {
-  stable var canisterId : ?Principal
-};
